@@ -1,0 +1,9 @@
+arithmetic: 輸出順序和paser差不多
+!: not, 該expr後面直接1+ xor oper 
+assign: 之前在呼叫變數的時候需要調出地址，是因為在使用store和load的時候要顯示自己的型態
+（istore, fstore, astore）及位置，透過我們建立好的symbol table，可以輕易查出變數位置
+以及型態
+bool=> string
+
+簡單來說，我們的作業是我們的compiler要能產生"xxx.j"，然後使用jasmin編過後變成java的
+class，然後產生xxx.j的時候基本上當assembly code就是，前面要補一些特定格式
